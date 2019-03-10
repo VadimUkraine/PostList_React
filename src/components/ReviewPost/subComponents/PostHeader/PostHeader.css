@@ -1,0 +1,9 @@
+.post_title{
+	text-align: center;
+}
+.post_content{
+	text-align: justify;
+	padding: 10px 5px;
+	border: 1px solid gray;
+	border-radius: 4px;
+}

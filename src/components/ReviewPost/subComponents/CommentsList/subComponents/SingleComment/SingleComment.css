@@ -1,0 +1,32 @@
+.comments{
+	display: flex;
+	flex-direction: column;
+	margin: 17px 0;
+	background-color: #FFDAB9;
+	padding: 0 5px;
+	border-radius: 5px;
+}
+
+.comments__name{
+	margin: 5px 0;
+}
+
+.comments__name span{
+	font-weight: bold;
+}
+.comments__creator{
+	margin: 5px 0;
+	font-style: italic;
+}
+.comments__creator span{
+	font-weight: bold;
+	font-style: normal;
+}
+
+.comments__text{
+	margin: 5px 0;
+}
+.comments__text span{
+	font-weight: bold;
+
+}

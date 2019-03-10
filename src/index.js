@@ -4,9 +4,41 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import { Provider } from 'react-redux';
+import { createStore, combineReducers, applyMiddleware} from 'redux';
+import thunk from 'redux-thunk';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
+
+import postsReducer from './store/reducers/postsReducer';
+import selectedReducer from './store/reducers/selectReducer';
+import getComments from './store/reducers/commentsReducer';
+import postsStateReducer from './store/reducers/postsStateReducer';
+import searchReducer from './store/reducers/searchReducer';
+import errorPostsReducer from './store/reducers/errorPostsReducer';
+import errorSelectReducer from './store/reducers/errorSelectReducer';
+
+const rootReducer = combineReducers({
+	posts: postsReducer,
+	select: selectedReducer,
+	comments: getComments,
+	showPosts: postsStateReducer, 
+	search: searchReducer,
+	errorPosts: errorPostsReducer,
+	errorSelect: errorSelectReducer,
+
+});
+
+const store = createStore(rootReducer, applyMiddleware(thunk));
+
+
+
+
+
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root')
+);
+
 serviceWorker.unregister();

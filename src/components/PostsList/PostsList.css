@@ -1,0 +1,55 @@
+.wrapper{
+	display: flex;
+	justify-content: center;
+	padding: 20px 10px;
+	flex-direction: column;
+	max-width: 700px;
+	margin: 0 auto;
+}
+h1{
+	text-align: center;
+	margin-top: 10px;
+}
+header{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+input{
+	width: 320px;
+	margin: 10px auto;
+	border-radius: 5px;
+	outline: 0;
+	border: 1px solid green;
+	line-height: 36px;
+	font-size: 18px;
+	padding: 0 10px;
+}
+
+.bnt_more{
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 400;
+    background-color: #37bc9b;
+    border: none;
+    border-radius: 3px;
+    width: 6.5625rem;
+    outline: 0;
+    margin: 25px auto 0 auto;
+    transition: all 0.3s linear;
+    line-height: 30px;
+}
+
+.btn_more:hover {
+    background-color: #48CFAD;
+}
+
+.postlist_loading{
+	text-align: center;
+}
+.error_posts{
+	color: red;
+	font-weight: bold;
+}
+

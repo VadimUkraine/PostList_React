@@ -1,0 +1,15 @@
+.link{
+	text-decoration: none;
+	color: black;
+	margin-top: 7px;
+	font-size: 22px;
+	line-height: 30px;
+	border: 1px solid blue;
+	background-color: #FAFAD2;
+	border-radius: 3px;
+	padding: 0 7px;
+	transition: all 0.2s ease;
+}
+.link:hover{
+	color: blue;
+}
